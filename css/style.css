@@ -1,0 +1,179 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+    color: white;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+body {
+	display: flex;
+	background-color: #114b5f;
+	text-align: center;
+	flex-direction: column;
+	padding-top: 2%;
+}
+h1 {
+	color: antiquewhite;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+	color: antiquewhite;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+.schedule {
+	margin-top: 10px;
+}
+.container {
+	width: 200px;
+	height: 870px;
+	background: #e4fde1;
+	margin-left: 10px;
+}
+.scontainer {
+	height: 380px;
+}
+#main {
+	width: auto;
+	height: 100%;
+	display: flex;
+}
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	justify-content: space-evenly;
+	color: #e4fde1;
+}
+ul li {
+	background: #e4fde1;
+	width: 90%;
+	height: 113px;
+	border: 1px solid #456990;
+	margin-top: 10px;
+	padding-top: 0rem;
+	padding-left: 0rem;
+}
+.card {
+	background-color: #456990;
+	width: 100%;
+	height: 100%;
+	padding-top: 0.5rem;
+	padding-left: 0.5rem;
+}
+ul li h2 {
+	font-size: 1.5rem;
+	text-align: left;
+	vertical-align: top;
+}
+ul li p {
+	font-size: 1rem;
+	text-align: left;
+	vertical-align: top;
+	margin-right: 5px;
+}
+.notes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.slot {
+	background: #e4fde1;
+	border: 2px solid #456990;
+}
+
+#btn {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	color: #456990;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header {
+	padding: 2px 16px;
+	background-color: #456990;
+}
+
+/* Modal Body */
+.modal-body {
+	padding: 2px 16px;
+}
+
+/* Modal Footer */
+.modal-footer {
+	padding: 2px 16px;
+	background-color: #456990;
+	color: white;
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}

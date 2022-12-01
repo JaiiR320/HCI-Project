@@ -1,0 +1,170 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="./js/script.js"></script>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Schedule Cards</title>
+	</head>
+	<body>
+		<div class="header">
+			<h1 style="padding-left: 90">Schedule Cards</h1>
+			<button id="btn">Add Card</button>
+		</div>
+		<div id="main">
+			<div class="schedule">
+				<h2>Kitchen</h2>
+				<div class="container scontainer">
+					<ul>
+						<li
+							id="1"
+							class="slot"
+							ondrop="drop(event)"
+							ondragover="allowDrop(event)"
+						></li>
+						<li
+							id="2"
+							class="slot"
+							ondrop="drop(event)"
+							ondragover="allowDrop(event)"
+						></li>
+						<li
+							id="3"
+							class="slot"
+							ondrop="drop(event)"
+							ondragover="allowDrop(event)"
+						></li>
+					</ul>
+				</div>
+				<h2>Servers</h2>
+				<div class="container scontainer">
+					<ul>
+						<li
+							id="1"
+							class="slot"
+							ondrop="drop(event)"
+							ondragover="allowDrop(event)"
+						></li>
+						<li
+							id="2"
+							class="slot"
+							ondrop="drop(event)"
+							ondragover="allowDrop(event)"
+						></li>
+						<li
+							id="3"
+							class="slot"
+							ondrop="drop(event)"
+							ondragover="allowDrop(event)"
+						></li>
+					</ul>
+				</div>
+			</div>
+			<div class="container">
+				<ul id="inventory">
+					<li
+						id="1"
+						class="taken slot"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					>
+						<div id="A" class="card" draggable="true" ondragstart="drag(event)">
+							<h2>Name</h2>
+							<div class="notes">
+								<p>saute</p>
+							</div>
+						</div>
+					</li>
+					<li
+						id="2"
+						class="slot"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></li>
+					<li
+						id="3"
+						class="slot"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></li>
+					<li
+						id="4"
+						class="slot"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></li>
+					<li
+						id="5"
+						class="slot"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></li>
+					<li
+						id="6"
+						class="slot"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></li>
+					<li
+						id="7"
+						class="slot"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Modal content -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+                <h3 style="color: #456990">Enter a name</h3>
+                <form>
+                    <input style="color: #456990" id="formname" type="text">
+                </form>
+                <h3 style="color: #456990">Enter notes</h3>
+                <form>
+                    <input style="color: #456990" id="formnotes" type="text">
+                </form>
+            </div>
+            <div class="modal-footer" style="display: flex; justify-content: center;">
+                <h3 style="margin-right: 20px;">Modal Footer</h3>
+                <button style="color: #456990" type="button" onclick="addCard()">Add</button>
+            </div>
+        </div>
+	</body>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById('btn');
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName('close')[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = 'block';
+        };
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = 'none';
+        };
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        };
+    </script>
+</html>
