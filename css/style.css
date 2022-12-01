@@ -3,24 +3,22 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: #FFFFFF;
 	-webkit-user-select: none; /* Safari */
 	-ms-user-select: none; /* IE 10 and IE 11 */
 	user-select: none; /* Standard syntax */
 }
 body {
 	display: flex;
-	background-color: #114b5f;
+	background-color: #022B3A;
 	text-align: center;
 	flex-direction: column;
 	padding-top: 2%;
 }
 h1 {
-	color: antiquewhite;
 	font-family: Arial, Helvetica, sans-serif;
 }
 h2 {
-	color: antiquewhite;
 	font-family: Arial, Helvetica, sans-serif;
 }
 .header {
@@ -33,7 +31,7 @@ h2 {
 .container {
 	width: 200px;
 	height: 870px;
-	background: #e4fde1;
+	background: #022B3A;
 	margin-left: 10px;
 }
 .scontainer {
@@ -49,19 +47,19 @@ ul {
 	flex-wrap: wrap;
 	list-style-type: none;
 	justify-content: space-evenly;
-	color: #e4fde1;
+	color: #BFDBF7;
 }
 ul li {
-	background: #e4fde1;
+	background: #BFDBF7;
 	width: 90%;
 	height: 113px;
-	border: 1px solid #456990;
+	border: 1px solid #1F7A8C;
 	margin-top: 10px;
 	padding-top: 0rem;
 	padding-left: 0rem;
 }
 .card {
-	background-color: #456990;
+	background-color: #1F7A8C;
 	width: 100%;
 	height: 100%;
 	padding-top: 0.5rem;
@@ -84,8 +82,7 @@ ul li p {
 	justify-content: space-evenly;
 }
 .slot {
-	background: #e4fde1;
-	border: 2px solid #456990;
+	background: #BFDBF7;
 }
 
 #btn {
@@ -94,7 +91,7 @@ ul li p {
 	margin-right: 10px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: medium;
-	color: #456990;
+	color: #022B3A;
 }
 
 /* The Modal (background) */
@@ -122,7 +119,7 @@ ul li p {
 
 /* The Close Button */
 .close {
-	color: white;
+	color: #E1E5F2;
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
@@ -130,7 +127,7 @@ ul li p {
 
 .close:hover,
 .close:focus {
-	color: white;
+	color: #E1E5F2;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -138,7 +135,7 @@ ul li p {
 /* Modal Header */
 .modal-header {
 	padding: 2px 16px;
-	background-color: #456990;
+	background-color: #1F7A8C;
 }
 
 /* Modal Body */
@@ -149,15 +146,14 @@ ul li p {
 /* Modal Footer */
 .modal-footer {
 	padding: 2px 16px;
-	background-color: #456990;
-	color: white;
+	background-color: #1F7A8C;
+	color: #E1E5F2;
 }
 
 /* Modal Content */
 .modal-content {
 	position: relative;
-	background-color: #fefefe;
-	margin: auto;
+	background-color: #E1E5F2;
 	padding: 0;
 	border: 1px solid #888;
 	width: 80%;
