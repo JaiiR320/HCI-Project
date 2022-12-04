@@ -46,6 +46,14 @@ function emptyCheck(){
 
 function addCard(){
     var name = document.getElementById('formname').value;
+    var currentCards = document.getElementsByClassName('card');
+    
+    for (var i = 0; i < currentCards.length; i++){
+        if (currentCards[i].id == name) {
+            return;
+        }
+    }
+    
     var notes = document.getElementById('formnotes').value;
     console.log("attempting to add card");
     var inv = document.getElementById("inventory");

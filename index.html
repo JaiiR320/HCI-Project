@@ -138,7 +138,11 @@
 					class="modal-footer"
 					style="display: flex; justify-content: center"
 				>
-					<button style="color: #022b3a; padding: 3px 15px;" type="button" onclick="addCard()">
+					<button
+						style="color: #022b3a; padding: 3px 15px"
+						type="button"
+						onclick="addCard()"
+					>
 						Add
 					</button>
 				</div>
@@ -152,7 +156,7 @@
 					<h2>Welcome</h2>
 				</div>
 				<div class="modal-body">
-					<h2 style="color: #022B3A">
+					<h2 style="color: #022b3a">
 						This is a Hi-fidelity prototype, please keep in mind the possibility
 						for bugs, and use UNIQUE names when creating cards
 					</h2>
@@ -189,7 +193,10 @@
 
 		// When the user clicks anywhere outside of the modal, close it
 		window.onclick = function (event) {
-			if (event.target == modal || event.target == document.getElementById('warn')) {
+			if (
+				event.target == modal ||
+				event.target == document.getElementById('warn')
+			) {
 				modal.style.display = 'none';
 				document.getElementById('warn').style.display = 'none';
 			}
