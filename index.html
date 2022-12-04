@@ -9,111 +9,113 @@
 		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
 	</head>
 	<body>
-		<div class="header">
-			<h1 style="padding-left: 10">Schedule Cards</h1>
-			<button id="btn">Add Card</button>
-		</div>
-		<div id="main">
-			<div class="schedule">
-				<h2>Kitchen</h2>
-				<div class="container scontainer">
-					<ul id="kitchen">
-						<li
-							id="1"
-							class="slot"
-							ondrop="drop(event)"
-							ondragover="allowDrop(event)"
-						></li>
-						<li
-							id="2"
-							class="slot"
-							ondrop="drop(event)"
-							ondragover="allowDrop(event)"
-						></li>
-						<li
-							id="3"
-							class="slot"
-							ondrop="drop(event)"
-							ondragover="allowDrop(event)"
-						></li>
-					</ul>
-				</div>
-				<h2>Servers</h2>
-				<div class="container scontainer">
-					<ul id="server">
-						<li
-							id="1"
-							class="slot"
-							ondrop="drop(event)"
-							ondragover="allowDrop(event)"
-						></li>
-						<li
-							id="2"
-							class="slot"
-							ondrop="drop(event)"
-							ondragover="allowDrop(event)"
-						></li>
-						<li
-							id="3"
-							class="slot"
-							ondrop="drop(event)"
-							ondragover="allowDrop(event)"
-						></li>
-					</ul>
-				</div>
+		<div class="template">
+			<div class="header">
+				<h1 style="padding-left: 10">Schedule Cards</h1>
+				<button id="btn">Add Card</button>
 			</div>
-			<div class="container">
-				<ul id="inventory">
-					<li
-						id="1"
-						class="taken slot"
-						ondrop="drop(event)"
-						ondragover="allowDrop(event)"
-					>
-						<div id="A" class="card" draggable="true" ondragstart="drag(event)">
-							<h2>Name</h2>
-							<div class="notes">
-								<p>saute</p>
+			<div id="main">
+				<div class="schedule">
+					<h2>Kitchen</h2>
+					<div class="container scontainer">
+						<ul id="kitchen">
+							<li
+								id="1"
+								class="slot"
+								ondrop="drop(event)"
+								ondragover="allowDrop(event)"
+							></li>
+							<li
+								id="2"
+								class="slot"
+								ondrop="drop(event)"
+								ondragover="allowDrop(event)"
+							></li>
+							<li
+								id="3"
+								class="slot"
+								ondrop="drop(event)"
+								ondragover="allowDrop(event)"
+							></li>
+						</ul>
+					</div>
+					<h2>Servers</h2>
+					<div class="container scontainer">
+						<ul id="server">
+							<li
+								id="1"
+								class="slot"
+								ondrop="drop(event)"
+								ondragover="allowDrop(event)"
+							></li>
+							<li
+								id="2"
+								class="slot"
+								ondrop="drop(event)"
+								ondragover="allowDrop(event)"
+							></li>
+							<li
+								id="3"
+								class="slot"
+								ondrop="drop(event)"
+								ondragover="allowDrop(event)"
+							></li>
+						</ul>
+					</div>
+				</div>
+				<div class="container">
+					<ul id="inventory">
+						<li
+							id="1"
+							class="taken slot"
+							ondrop="drop(event)"
+							ondragover="allowDrop(event)"
+						>
+							<div id="A" class="card" draggable="true" ondragstart="drag(event)">
+								<h2>Name</h2>
+								<div class="notes">
+									<p>saute</p>
+								</div>
 							</div>
-						</div>
-					</li>
-					<li
-						id="2"
-						class="slot"
-						ondrop="drop(event)"
-						ondragover="allowDrop(event)"
-					></li>
-					<li
-						id="3"
-						class="slot"
-						ondrop="drop(event)"
-						ondragover="allowDrop(event)"
-					></li>
-					<li
-						id="4"
-						class="slot"
-						ondrop="drop(event)"
-						ondragover="allowDrop(event)"
-					></li>
-					<li
-						id="5"
-						class="slot"
-						ondrop="drop(event)"
-						ondragover="allowDrop(event)"
-					></li>
-					<li
-						id="6"
-						class="slot"
-						ondrop="drop(event)"
-						ondragover="allowDrop(event)"
-					></li>
-					<li
-						id="7"
-						class="slot"
-						ondrop="drop(event)"
-						ondragover="allowDrop(event)"
-					></li>
-				</ul>
+						</li>
+						<li
+							id="2"
+							class="slot"
+							ondrop="drop(event)"
+							ondragover="allowDrop(event)"
+						></li>
+						<li
+							id="3"
+							class="slot"
+							ondrop="drop(event)"
+							ondragover="allowDrop(event)"
+						></li>
+						<li
+							id="4"
+							class="slot"
+							ondrop="drop(event)"
+							ondragover="allowDrop(event)"
+						></li>
+						<li
+							id="5"
+							class="slot"
+							ondrop="drop(event)"
+							ondragover="allowDrop(event)"
+						></li>
+						<li
+							id="6"
+							class="slot"
+							ondrop="drop(event)"
+							ondragover="allowDrop(event)"
+						></li>
+						<li
+							id="7"
+							class="slot"
+							ondrop="drop(event)"
+							ondragover="allowDrop(event)"
+						></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 

@@ -10,7 +10,7 @@
 }
 body {
 	display: flex;
-	background-color: #022B3A;
+	background-color: #333;
 	text-align: center;
 	flex-direction: column;
 	padding-top: 2%;
@@ -24,6 +24,8 @@ h2 {
 .header {
 	display: flex;
 	justify-content: space-between;
+	background: #022B3A;
+	padding-top: 10px;
 }
 .schedule {
 	margin-top: 10px;
@@ -84,7 +86,11 @@ ul li p {
 .slot {
 	background: #BFDBF7;
 }
-
+.template {
+	width: 428px;
+	height: 926px;
+	background: #022B3A;
+}
 #btn {
 	padding-left: 5px;
 	padding-right: 5px;
